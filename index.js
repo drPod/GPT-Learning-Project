@@ -10,12 +10,12 @@ const response = await openai.createCompletion({
   max_tokens: 7,
 }); */
 
-const { Configuration, OpenAIApi } = require("openai");
+/* const { Configuration, OpenAIApi } = require("openai");
 
 const configuration = new Configuration({
     //apiKey: process.env.OPENAI_API_KEY,
     // school account - apiKey: "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"
-    apiKey: "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",
+    apiKey: "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",
 });
 
 const openai = new OpenAIApi(configuration);
@@ -31,4 +31,6 @@ openai.createCompletion({
   })
   .catch(error => {
     console.log(error);
-  });
+  }); */
+
+  
