@@ -85,17 +85,17 @@ const configuration = new Configuration({
 
 const openai = new OpenAIApi(configuration);
 
+// THE FOLLOWING 2 FUNCTIONS OUTPUT ALL THE GPT ENGINES/MODELS
 // define function to get number of available engines
 async function getNumEngines() {
   try {
     const response = await openai.listEngines();
-    console.log(response.data)
+    console.log(response.data) // Use this to output the array itself
     return response.data.data.length;
   } catch (error) {
     console.log(error);
   }
 }
-
 // loop through and output all the models
 async function loopEngines() {
   const numEngines = await getNumEngines();
@@ -109,5 +109,5 @@ async function loopEngines() {
   }
 }
 
-loopEngines();
+loopEngines(); // Calling the function
 
