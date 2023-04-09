@@ -6,7 +6,6 @@ const configuration = new Configuration({
 
 const openai = new OpenAIApi(configuration);
 
-/*
 // THE FOLLOWING 2 FUNCTIONS OUTPUT ALL THE GPT ENGINES/MODELS
 // define function to get number of available engines
 async function getNumEngines() {
@@ -32,22 +31,3 @@ async function loopEngines() {
 }
 
 loopEngines(); // Calling the function
-*/
-
-// THE FOLLOWING FUNCTION TESTS THE CURIE MODEL
-async function testCurie() {
-  try {
-    const response = await openai.createCompletion({
-      engine: "text-davinci-002",
-      prompt: "What is the capital of France?",
-      maxTokens: 64,
-      n: 1,
-      stop: "\n",
-    });
-    console.log(response.data.choices[0].text);
-  } catch (error) {
-    console.log(error);
-  }
-}
-
-testCurie();
