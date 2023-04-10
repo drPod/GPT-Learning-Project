@@ -1,5 +1,3 @@
-Listed below are all the ChatGPT models:
-
 babbage
 davinci
 text-davinci-edit-001
