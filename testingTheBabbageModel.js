@@ -7,7 +7,7 @@ const configuration = new Configuration({
 });
 
 const testTextSimilarityBabbage = async () => {
-  const engine = 'text-similarity-babbage-001';
+  const engine = 'text-davinci-003';
   const prompt1 = 'apple';
   const prompt2 = 'orange';
 
@@ -16,7 +16,8 @@ const testTextSimilarityBabbage = async () => {
 
   try {
     // Test text similarity
-    const response = await api.createCompletion(engine, {
+    const response = await api.createCompletion({
+      model: engine,
       prompt: `${prompt1}\n${prompt2}`,
       temperature: 0,
       max_tokens: 1,
