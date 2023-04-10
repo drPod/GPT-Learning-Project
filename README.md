@@ -20,8 +20,6 @@ OpenAI has developed many nueral engines each suited for a different purpose. Th
 
 Each GPT model can be called from different modules. The _testingTheBabbageModel.js_ file script calls the Babbage model and the _testingDavinciModel.py_ calls the Davinci model.
 
+## Contributions
+
 If you'd like to contribute to this project, feel free to fork the repository and submit a pull request. Contributions could include additional scripts or improvements to existing content.
-
-## License
-
-This project is licensed under the MIT License. Feel free to use and modify the code as you see fit.
