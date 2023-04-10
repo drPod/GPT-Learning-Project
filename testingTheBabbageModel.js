@@ -1,4 +1,4 @@
-// All the popular models keep returning a 400 error meaning they are always full of requests. I made thisc script to test a less popular babbage model
+// All the popular models keep returning a 400 error meaning they are always full of requests. I made this script to test a less popular babbage model
 
 const { Configuration, OpenAIApi } = require("openai");
 
@@ -16,7 +16,7 @@ const testTextSimilarityBabbage = async () => {
 
   try {
     // Test text similarity
-    const response = await api.completions.create(engine, {
+    const response = await api.createCompletion(engine, {
       prompt: `${prompt1}\n${prompt2}`,
       temperature: 0,
       max_tokens: 1,
