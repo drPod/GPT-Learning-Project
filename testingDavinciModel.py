@@ -4,7 +4,7 @@ import os
 import openai
 
 # openai.api_key = os.getenv("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")
-openai.api_key = "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"
+openai.api_key = "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"
 
 response = openai.Completion.create(
     model="text-davinci-003",
