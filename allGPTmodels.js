@@ -2,7 +2,7 @@ const { Configuration, OpenAIApi } = require("openai");
 require("dotenv").config()
 
 const configuration = new Configuration({
-  apiKey: process.env.API_KEY, // The API key is stored in a hidden .env file
+  apiKey: process.env.API_KEY, // The API key is locally stored in a hidden .env file
 });
 
 const openai = new OpenAIApi(configuration);

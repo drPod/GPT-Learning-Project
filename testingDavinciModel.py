@@ -1,5 +1,3 @@
-# I'm going to try testing a GPT model in Python to see if it gives me a more detailed error message because it's getting frustrating seeing the status 400 over and over again
-
 import os
 import openai
 
